@@ -37,8 +37,8 @@ margin-top: 0;
   font-size: 200px;
 }
 #review{
-background-image: url('../img/food_review.jpg');
-  background-image: cover;
+  background-image: url('../img/food_review.jpg');
+  background-size: cover;
   background-attachment: fixed;
   height: 500px;
 
@@ -108,4 +108,11 @@ color: #f15a24;
 #contact{
   background-color: #f15a24;
   color: #fff;
+}
+.hover-change a3:hover {
+  background-color: #000 !important;
+  color: #fff;
+}
+.scroll-font-color {
+  color: green;
 }
