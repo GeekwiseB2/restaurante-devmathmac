@@ -10,7 +10,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1"  id="home">
 	<div class="container-fluid">
 			<nav class="navbar navbar-default navbar-fixed-top">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,11 +27,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
+	        <li class="active"><a class="smooth-scroll" href="#home">Home</a></li>
+					<li><a class="smooth-scroll" href="#story">Story</a></li>
+					<li><a class="smooth-scroll" href="#review">Review</a></li>
+					<li><a class="smooth-scroll" href="#menu">Menu</a></li>
+					<li><a class="smooth-scroll" href="#contact">Contact</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	</nav>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="img/restaurant2.jpg" alt="Restaurant background">
+      <img src="img/restaurant-2.jpg" alt="Restaurant background">
       <div class="carousel-caption">
 				<h2>Eat Local</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -63,7 +63,7 @@
       <img src="img/farm-2.jpg" alt="Farm Background">
       <div class="carousel-caption">
 				<h2>Eat Local</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="scroll-font-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<button class="btn btn-default" type="submit">Learn More</button>
 			</div>
     </div>
@@ -87,6 +87,7 @@
 				<h3>One Man. One Dream.</h3>
 			</div>
 			<div class="col-sm-6">
+				<h1 id="year">1989</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -96,10 +97,127 @@
 	</div>
 </div> <!--end story-->
 
-	</div> <!--container-fluid-->
+ <div id="review">
+	<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 review-bg">
+
+	<h1>Fresno Bee</h1>
+	<p>"The freshest and best ingredients come together to make some of the best food i have ever ate"</p>
+ </div>
+ </div>
+ </div>
+
+<div id="menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Menu</h1>
+				<!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active hover-change"><a href="#Appetizers" aria-controls="home" role="tab" data-toggle="tab" style="color:#f15a24; text-transform: uppercase;">Home</a></li>
+			    <li role="presentation" class="hover-change"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" style="color:#f15a24; text-transform: uppercase;">Profile</a></li>
+			    <li role="presentation" class="hover-change"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="color:#f15a24; text-transform: uppercase;" >Messages</a></li>
+			    <li role="presentation"class="hover-change"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" style="color:#f15a24; text-transform: uppercase;">Settings</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="Appetizers">
+			    	<div class="row">
+			    		<div class="col-sm-3">
+			    			<img src="img/dip.jpg" alt="dip" class="thumbnail img-responsive">
+								<h3>Appetizer 1</h3>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facilis ipsum vero commodi quasi perferendis vel quae voluptas provident officiis! Delectus eos quis iste, repellat facilis minus corrupti animi praesentium.</p>
+			    		</div>
+							<div class="col-sm-3">
+			    			<img src="img/eggplant.jpg" alt="eggplant" class="thumbnail img-responsive">
+								<h3>Appetizer 1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facilis ipsum vero commodi quasi perferendis vel quae voluptas provident officiis! Delectus eos quis iste, repellat facilis minus corrupti animi praesentium.</p>
+			    		</div>
+							<div class="col-sm-3">
+			    			<img src="img/meat.jpg" alt="pork" class="thumbnail img-responsive">
+								<h3>Appetizer 1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facilis ipsum vero commodi quasi perferendis vel quae voluptas provident officiis! Delectus eos quis iste, repellat facilis minus corrupti animi praesentium.</p>
+			    		</div>
+							<div class="col-sm-3">
+			    			<img src="img/bruschetta.jpg" alt="bruchetta" class="thumbnail img-responsive">
+								<h3>Appetizer 1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facilis ipsum vero commodi quasi perferendis vel quae voluptas provident officiis! Delectus eos quis iste, repellat facilis minus corrupti animi praesentium.</p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+			    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+			    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+			  </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<h1>Contact us</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+										<!-- Do not change the code! -->
+						<a id="foxyform_embed_link_774305" href="http://www.foxyform.com/">foxyform</a>
+						<script type="text/javascript">
+						(function(d, t){
+						   var g = d.createElement(t),
+						       s = d.getElementsByTagName(t)[0];
+						   g.src = "http://www.foxyform.com/js.php?id=774305&sec_hash=786381e852a&width=350px";
+						   s.parentNode.insertBefore(g, s);
+						}(document, "script"));
+						</script>
+						<!-- Do not change the code! -->
+			</div>
+			<div class="col-sm-6">
+				<address>
+			  <strong>Restaurante</strong><br>
+			  123 Fulton Street<br>
+			  Fresno, CA 93721<br>
+			  <abbr title="Phone">P:</abbr> (123) 456-7890
+			</address>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.604240150391!2d-119.78797104943683!3d36.73206497986427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4f5cb43%3A0xe56ff4273de1051!2s700+Van+Ness+Ave%2C+Fresno%2C+CA+93721!5e0!3m2!1sen!2sus!4v1461899318953" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+ <!--container-fluid-->
 
 	<!-- javascript	 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if( $(this).attr("class")=="smooth-scroll") {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                            $('html,body').animate({
+                                    scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                    }
+                }
+            }
+        });
+    });
+  </script>
+
 </body>
 </html>
